@@ -13,6 +13,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Control Brokerage Vendor No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4263635289 - Control 3779674082 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2789319530">
+          <source>Specifies the alert status for the insurance.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Control Alert - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4263635289 - Control 3779674082 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2789319530">
+          <source>Alert</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Control Alert - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4263635289 - Control 2950050790 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2789319530">
+          <source>Specifies the notice date for the insurance.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Control Notice - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4263635289 - Control 2950050790 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2789319530">
+          <source>Notice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Control Notice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 690389757 - Field 3779674082 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
+          <source>Specifies the alert status for the insurance.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Alert - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 690389757 - Field 3779674082 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
+          <source>Alert</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Alert - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 690389757 - Field 429633109 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
           <source>Specifies the brokerage vendor number for the customer.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -22,6 +52,16 @@
           <source>Brokerage Vendor No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Brokerage Vendor No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 690389757 - Field 2950050790 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
+          <source>Specifies the notice date for the insurance.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Notice - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 690389757 - Field 2950050790 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
+          <source>Notice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Notice - Property Caption</note>
         </trans-unit>
       </group>
     </body>

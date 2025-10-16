@@ -3,23 +3,53 @@
   <file datatype="xml" source-language="en-US" target-language="es-ES" original="AppSeguros">
     <body>
       <group id="body">
-        <trans-unit id="PageExtension 4263635289 - Control 1449706159 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
-          <source>Specifies the insurance policy number for the customer.</source>
-          <target>Especifica el número de póliza de seguro para el cliente.</target>
+        <trans-unit id="PageExtension 4263635289 - Control 429633109 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2789319530">
+          <source>Specifies the brokerage vendor number for the customer.</source>
+          <target>Especifica el número de proveedor de corretaje para el cliente.</target>
           <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Control Insurance Policy No. - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Control Brokerage Vendor No. - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 4263635289 - Control 1449706159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
-          <source>Insurance Policy No.</source>
-          <target>Número de Póliza de Seguro</target>
+        <trans-unit id="PageExtension 4263635289 - Control 429633109 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2789319530">
+          <source>Brokerage Vendor No.</source>
+          <target>Número de Proveedor de Corretaje</target>
           <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Control Insurance Policy No. - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Control Brokerage Vendor No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 690389757 - Field 1449706159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
-          <source>Insurance Policy No.</source>
-          <target>Número de Póliza de Seguro</target>
+        <trans-unit id="TableExtension 690389757 - Field 3779674082 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
+          <source>Specifies the alert status for the insurance.</source>
+          <target>Especifica el estado de alerta para el seguro.</target>
           <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Insurance Policy No. - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Alert - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 690389757 - Field 3779674082 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
+          <source>Alert</source>
+          <target>Alerta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Alert - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 690389757 - Field 429633109 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
+          <source>Specifies the brokerage vendor number for the customer.</source>
+          <target>Especifica el número de proveedor de corretaje para el cliente.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Brokerage Vendor No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 690389757 - Field 429633109 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
+          <source>Brokerage Vendor No.</source>
+          <target>Número de Proveedor de Corretaje</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Brokerage Vendor No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 690389757 - Field 2950050790 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
+          <source>Specifies the notice date for the insurance.</source>
+          <target>Especifica la fecha de aviso para el seguro.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Notice - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 690389757 - Field 2950050790 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
+          <source>Notice</source>
+          <target>Aviso</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Notice - Property Caption</note>
         </trans-unit>
       </group>
     </body>
