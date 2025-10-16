@@ -3,8 +3,7 @@
     "al.codeAnalyzers": [
         "${CodeCop}",
         "${UICop}",
-        "${PerTenantExtensionCop}",
-        "${AppSourceCop}"
+        "${PerTenantExtensionCop}"
     ],
     "al.ruleSetPath": ".codeanalysis/lider.ruleset.json"
 }

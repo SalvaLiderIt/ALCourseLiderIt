@@ -7,6 +7,7 @@ pageextension 50101 "Insurance Card Ext" extends "Customer Card"
             field("Insurance Policy No."; Rec."Insurance Policy No.")
             {
                 ApplicationArea = All;
+                Caption = 'Insurance Policy No.';
                 ToolTip = 'Specifies the insurance policy number for the customer.';
             }
         }
