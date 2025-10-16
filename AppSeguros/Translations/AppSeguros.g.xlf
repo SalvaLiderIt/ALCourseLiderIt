@@ -3,17 +3,17 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="AppSeguros">
     <body>
       <group id="body">
-        <trans-unit id="PageExtension 4263635289 - Control 1449706159 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+        <trans-unit id="PageExtension 4263635289 - Control 1449706159 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2789319530">
           <source>Specifies the insurance policy number for the customer.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Control Insurance Policy No. - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 4263635289 - Control 1449706159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+        <trans-unit id="PageExtension 4263635289 - Control 1449706159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2789319530">
           <source>Insurance Policy No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Control Insurance Policy No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 690389757 - Field 1449706159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+        <trans-unit id="TableExtension 690389757 - Field 1449706159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1538464910">
           <source>Insurance Policy No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Insurance Ext - Field Insurance Policy No. - Property Caption</note>

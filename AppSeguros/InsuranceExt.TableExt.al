@@ -1,4 +1,4 @@
-tableextension 50100 "Insurance Ext" extends Customer
+tableextension 50145 "Insurance Ext" extends Insurance
 {
     fields
     {
