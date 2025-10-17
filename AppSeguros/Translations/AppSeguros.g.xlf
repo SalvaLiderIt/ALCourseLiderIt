@@ -3,6 +3,16 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="AppSeguros">
     <body>
       <group id="body">
+        <trans-unit id="PageExtension 4263635289 - Action 1069092008 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2789319530">
+          <source>Send email notification to users with insurance alerts enabled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Action SendInsuranceEmailPepalaCoja - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4263635289 - Action 1069092008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2789319530">
+          <source>Send Insurance Email</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Insurance Card Ext - Action SendInsuranceEmailPepalaCoja - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4263635289 - Control 429633109 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2789319530">
           <source>Specifies the brokerage vendor number for the customer.</source>
           <note from="Developer" annotates="general" priority="2"></note>

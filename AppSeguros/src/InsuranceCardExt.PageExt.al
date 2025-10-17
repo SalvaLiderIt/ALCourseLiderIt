@@ -28,7 +28,31 @@ pageextension 50101 "Insurance Card Ext" extends "Insurance Card"
                     ToolTip = 'Specifies the notice date for the insurance.';
                 }
             }
+        }
+    }
 
+    actions
+    {
+        addfirst(navigation)
+        {
+            action(SendInsuranceEmail)
+            {
+                ApplicationArea = All;
+                Caption = 'Send Insurance Email';
+                ToolTip = 'Send email notification to users with insurance alerts enabled';
+                Image = Email;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+
+                trigger OnAction()
+                var
+                    InsuranceMgt: Codeunit InsuranceEmailMgt;
+                begin
+                    InsuranceMgt.NotifyInsuranceAlert(Rec);
+                    Message('Email notifications sent successfully.');
+                end;
+            }
         }
     }
 }

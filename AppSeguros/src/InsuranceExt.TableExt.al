@@ -24,15 +24,4 @@ tableextension 50101 "Insurance Ext" extends Insurance
         }
 
     }
-
-    // <<< CAMBIO CLAVE: AÑADIR ESTE TRIGGER >>>
-    // Este bloque de código se ejecuta DESPUÉS de que un registro se ha modificado.
-    trigger OnAfterModify()
-    var
-        InsuranceMgt: Codeunit InsuranceEmailMgt;
-    begin
-        // Comprobamos si el campo "Alert" ha cambiado y si su nuevo valor es 'true'.
-        if Rec.Alert <> xRec.Alert and Rec.Alert then
-            InsuranceMgt.NotifyInsuranceAlert(Rec);
-    end;
 }
