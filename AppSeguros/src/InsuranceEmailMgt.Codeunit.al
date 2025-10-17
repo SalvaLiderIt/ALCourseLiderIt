@@ -8,6 +8,7 @@ codeunit 50100 InsuranceEmailMgt
     local procedure CheckAndSendInsuranceEmailNotifications()
     var
         varInsurance: Record Insurance;
+        varUserSetup: Record "User Setup";
     begin
         // recorrer todos los seguros
         varInsurance.SetRange(Alert, true);
@@ -15,12 +16,16 @@ codeunit 50100 InsuranceEmailMgt
             repeat
                 //  todo comprobar si hay que mandar el email
                 //  todo mandar el email a tantos usuarios como sea necesario
-                SendInsuranceEmailNotification();
+                varUserSetup.SetRange("Insurance Alert", true);
+                if varUserSetup.FindSet() then
+                    repeat
+                        SendInsuranceEmailNotification(varInsurance, varUserSetup);
+                    until varUserSetup.Next() = 0;
             until varInsurance.Next() = 0;
     end;
 
 
-    local procedure SendInsuranceEmailNotification()
+    procedure SendInsuranceEmailNotification(var varInsurance: Record Insurance; var varUserSetup: Record "User Setup")
     var
         Email: Codeunit Email;
         EmailMessage: Codeunit "Email Message";
@@ -29,9 +34,15 @@ codeunit 50100 InsuranceEmailMgt
         Subject: Text[100];
         Body: Text[1000];
     begin
-        //  note Configurar los datos del email reemplazar?
+        //  note Aquí están los detalles del email
+        //  info la siguiente condición es muy útil para mostrar errores en pantalla en caso de que la información del usuario no esté completa
+        if varUserSetup."E-Mail" = '' then begin
+            Message('El usuario %1 no tiene una dirección de correo electrónico válida.', varUserSetup."User ID");
+            exit;
+        end;
+        // todo falta por agregar que si el email está en blanco no se envía
         SenderAddress := 'sepabeat@gmail.com';
-        Recipients := 'spavila@liderit.es';
+        Recipients := varUserSetup."E-Mail";
         Subject := 'Notificación de Seguro - test primer email programado';
         Body := 'Estimado usuario,' + '<br><br>' +
                 'Le informamos de que eres la puta ostia si esto funciona a la primera, y que el seguro está próximo a vencer.' + '<br><br>' +
@@ -45,6 +56,19 @@ codeunit 50100 InsuranceEmailMgt
         // Enviar el email
         if not Email.Send(EmailMessage) then
             Error('Error al enviar el email de notificación');
+    end;
+
+    // Método público para ser llamado desde el trigger de la tabla
+    procedure NotifyInsuranceAlert(var Insurance: Record Insurance)
+    var
+        UserSetup: Record "User Setup";
+    begin
+        // Buscar todos los usuarios que quieren recibir alertas de seguros
+        UserSetup.SetRange("Insurance Alert", true);
+        if UserSetup.FindSet() then
+            repeat
+                SendInsuranceEmailNotification(Insurance, UserSetup);
+            until UserSetup.Next() = 0;
     end;
 
 }
