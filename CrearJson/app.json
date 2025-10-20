@@ -1,0 +1,31 @@
+{
+  "id": "8e8aceb4-9938-4639-91ec-9a2856f71492",
+  "name": "CrearJson",
+  "publisher": "Sepa",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "1.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "15.2",
+  "features": ["TranslationFile"],
+ "suppressWarnings": ["AS0051","AS0052","AS0084"]
+}
