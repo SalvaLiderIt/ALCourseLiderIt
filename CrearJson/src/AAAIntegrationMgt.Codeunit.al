@@ -2,7 +2,7 @@ codeunit 50102 "AAA Integration Mgt"
 {
     procedure GetSalesInvoicesAsJson(): Text
     begin
-        exit('{}');
+        exit('{"test-sepa" : "FV19003"}');
     end;
 
 }
