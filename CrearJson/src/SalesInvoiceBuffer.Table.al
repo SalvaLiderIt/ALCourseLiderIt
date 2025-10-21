@@ -77,4 +77,28 @@ table 50100 "Sales Invoice Buffer"
             DataClassification = CustomerContent;
         }
     }
+
+    procedure WriteAllRecToJson(): Text
+    begin
+        Clear(Json);
+        if IsEmpty() then begin
+            Json.WriteStartObject('');
+            Json.WriteEndObject();
+            exit(Json.GetJSonAsText());
+        end;
+
+        //crear json
+        Json.WriteStartObject('');
+        Json.WriteProperty(InvoicesLbl);
+        Json.WriteStartArray('');
+        //facturas
+        Json.WriteEndArray();
+        Json.WriteEndObject();
+        exit(Json.GetJSonAsText());
+    end;
+
+    var
+        Json: Codeunit "Json Text Reader/Writer";
+        InvoicesLbl: Label 'Invoices';
+
 }
