@@ -92,9 +92,31 @@ table 50100 "Sales Invoice Buffer"
         Json.WriteProperty(InvoicesLbl);
         Json.WriteStartArray('');
         //facturas
+        FindSet();
+        repeat
+            WriteThisRecToJson();
+        until Next() = 0;
+
         Json.WriteEndArray();
         Json.WriteEndObject();
         exit(Json.GetJSonAsText());
+    end;
+
+    local procedure WriteThisRecToJson()
+    begin
+        Json.WriteStartObject('');
+        Json.WriteStringProperty(FieldCaption("Document No."), "Document No.");
+        WriteStringProperty(true, FieldCaption("Posting Date"), "Posting Date");
+        Json.WriteEndObject();
+    end;
+
+    local procedure WriteStringProperty(WriteAlways: boolean; VariableName: Text; Variable: Variant)
+
+    begin
+        if not WriteAlways then
+            if FORMAT(Variable, 0, 9) = '' then
+                exit;
+        Json.WriteStringProperty(VariableName, Variable);
     end;
 
     var

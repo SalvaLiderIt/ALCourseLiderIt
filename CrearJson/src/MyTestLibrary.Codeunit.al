@@ -1,5 +1,33 @@
 codeunit 50106 "My Test Library"
 {
+    local procedure GetExpectedJsonValue(): Text
+    var
+        JsonTxt: Text;
+
+        // Labels for JSON structure
+        InvoicesLbl: Label ' "Invoices" : [ ';
+        SerialNumberLbl: Label '   "serial_number" : "00001" , ';
+        DateLbl: Label '   "date":"%1"', Comment = 'La etiqueta contiene el marcador de posición %1.'; // La etiqueta contiene el marcador de posición %1
+        JsonStartLbl: Label '{';
+        JsonEndLbl: Label '}';
+        // ArrayStartLbl: Label '[';
+        ArrayEndLbl: Label ']';
+        ObjectStartLbl: Label '  { ';
+        ObjectEndLbl: Label '  } ';
+    begin
+        JsonTxt := StrSubstNo(JsonStartLbl);
+        JsonTxt += StrSubstNo(InvoicesLbl);
+        JsonTxt += StrSubstNo(ObjectStartLbl);
+        JsonTxt += StrSubstNo(SerialNumberLbl);
+        JsonTxt += StrSubstNo(DateLbl, Format(Today(), 0, 9));
+        JsonTxt += StrSubstNo(ObjectEndLbl);
+        JsonTxt += StrSubstNo(ArrayEndLbl);
+        JsonTxt += StrSubstNo(JsonEndLbl);
+
+        Message(RemoveNonVisibleCharsAndSpaces(JsonTxt));
+    end;
+
+    //remove all unnecesary spaces and non visible characters from a text
     procedure RemoveNonVisibleCharsAndSpaces(InString: Text): Text
     var
         i: Integer;

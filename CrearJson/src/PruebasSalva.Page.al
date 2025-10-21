@@ -1,4 +1,5 @@
 // pagina para pruebas de codigo AL de salva
+// para comprobar estas pruebas, en concreto la de eliminar espacios, buscar la página en BC "Pruebas Salva", y darle a acciones 
 
 #pragma warning disable AA0247
 page 50100 "Pruebas Salva"

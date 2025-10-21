@@ -35,6 +35,7 @@ codeunit 50102 "AAA Integration Mgt"
         SalesInvoiceBuffer."Entry No." += 1;
         SalesInvoiceBuffer."Line Type" := SalesInvoiceBuffer."Line Type"::Header;
         SalesInvoiceBuffer."Document No." := SalesInvoiceHeader."No.";
+        SalesInvoiceBuffer."Posting Date" := SalesInvoiceHeader."Posting Date";
         SalesInvoiceBuffer.Insert();
     end;
 
